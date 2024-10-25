@@ -6,55 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio for Ida Lim Pek, you can see her work and what she works with.">
     <link rel="shortcut icon" href="/media/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/main.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=STIX+Two+Text:wght@600&display=swap"
+        rel="stylesheet">
     <title>Portfolio Ida</title>
 </head>
 
 <body>
     <header>
         <section class="frontpage">
-            <p class="frontpage-text">Looking for someone hungry to learn more and eager to use that knowledge?<br>You found her!</p>
-            <p class="btn">Let's go!</p>
-        </section>
-        <section>
-            <picture>
-                <img src="/media/ida.svg" alt="Ida">
-            </picture>
-                    <a href="https://www.instagram.com/dellaailing/"><img src="/media/insta.svg" alt="Instagram"></a>
-                    <a href="https://github.com/Chokladglasyr"><img src="/media/github.svg" alt="Github"></a>
-                    <a href="https://se.linkedin.com/in/ida-lim-pek-710996139"><img src="/media/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="/media/ida.lim.pek.cv.pdf" download="CV"><img src="/media/cv.svg" alt="CV"></a>
-            <section class="LFW">
-                <p>Looking for internship (LIA) during Nov 2025-April 2025!</p>
-                <p>Student at ChasAcademy, by july 2025 I'll be THE fullstack developer YOU need!</p>
-            </section>
-            <nav>
-                <ul>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Connect with me</li>
-                </ul>
-            </nav>
+            <h1>Looking for someone hungry to learn more and eager to use that knowledge?<br><br>You
+                found her! <br><br></h1>
+            <a href="#Photo" class="btn">LET'S GO!</a>
         </section>
     </header>
     <main>
+        <section class="links-container">
+            <figure class="grid-item1"><img id="Photo" src="/media/ida.svg" alt="Ida" height="100%"></figure>
+            <!-- <p class="grid-item1">hello</p> -->
+            <a class="grid-item2" href="https://www.instagram.com/dellaailing/"><img src="/media/insta.svg"
+                    alt="Instagram"></a>
+            <a class="grid-item3" href="https://github.com/Chokladglasyr"><img src="/media/github.svg" alt="Github"></a>
+            <a class="grid-item4" href="https://se.linkedin.com/in/ida-lim-pek-710996139"><img src="/media/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a class="grid-item5" href="/media/ida.lim.pek.cv.pdf" download="CV"><img src="/media/cv.svg" alt="CV"></a>
+
+            <section class="grid-item6">
+                <section class="card">
+                    <div class="card-content">
+                        <div class="card-front">
+                            <p class="card-name">Ida Lim Pek</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="card-gametag">Chokladglasyr</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="grid-item7">
+                <p>Looking for internship (LIA) during Nov 2025-April 2025!</p>
+                <p>Student at ChasAcademy, by July 2025 I'll be <b>THE</b> fullstack developer <em>YOU</em> need!</p>
+            </section>
+
+        </section>
+
+        <br>
+
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect with me</a></li>
+            </ul>
+        </nav>
+        <br>
         <section class="skills">
+            <h2 id="skills">Skills</h2>
             <img src="/media/html.svg" alt="HTML5">
             <img src="/media/css3.svg" alt="CSS3">
             <img src="/media/sass.svg" alt="Sass">
+            <br>
         </section>
         <section class="projects">
+            <h2 id="projects">Projects</h2>
             <img src="/media/project1.svg" width="40%" alt="README">
             <img src="/media/project2.svg" width="40%" alt="Hobbypage">
             <video controls src="/media/hobbysite.mp4" width="40%"></video>
         </section>
     </main>
     <footer>
-        <h2>Connect with me!</h2>
+        <h2 id="connect">Connect with me!</h2>
         <table class="kontakt">
             <thead>
                 <tr>
-                    <th scope="col"><a href="mailto:lim_ida@live.com"><img src="" alt="Mail me"></a></th>
-                    <th scope="col"> <a href="tel:+4676559258"><img src="" alt="Call me"></a></th>
+                    <th scope="col"><a href="mailto:lim_ida@live.com"><img src="/media/mail.svg" alt="Mail me"></a></th>
+                    <th scope="col"> <a href="tel:+46765592587"><img src="/media/phone.svg" alt="Call me"></a></th>
                 </tr>
             </thead>
         </table>

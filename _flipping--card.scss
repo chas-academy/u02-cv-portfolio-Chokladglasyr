@@ -1,0 +1,46 @@
+@use "fonts" as font;
+
+$padding-xs: 0.5rem;
+$padding-s: 1.5rem;
+$padding-m: 2.5rem;
+
+.card {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.card-content {
+    text-align: center;
+    position: relative;
+    transition: transform 3s;
+    padding: $padding-s;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #3184C0, #68B4E4, #3184C0);
+    transform-style: preserve-3d;
+
+}
+.card:hover .card-content {
+    transform: rotateY(.5turn);
+}
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $padding-xs;
+}
+.card-front {
+    transform: translateZ(100px);
+    @include font.font-text;
+    font-size: font.$font-size-s;
+}
+.card-back{
+    transform: translateZ(-80px);
+    @include font.font-text;
+    font-size: font.$font-size-s;
+}
+.card-gametag {
+    transform: rotateY(-0.5turn);
+    
+}

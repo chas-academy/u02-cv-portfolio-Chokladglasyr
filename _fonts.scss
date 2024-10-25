@@ -1,0 +1,30 @@
+
+
+
+$font-size-xs: 1.5em;
+$font-size-s: 2em;
+
+
+
+
+
+@mixin font-rubrik{
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@mixin font-text{
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-knapp{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
