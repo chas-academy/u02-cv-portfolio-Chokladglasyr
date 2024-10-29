@@ -1,4 +1,4 @@
-.card {
+s .card {
   width: 20rem;
   margin: 0 auto;
 }
@@ -9,8 +9,9 @@
   transition: transform 3s;
   padding: 1.5rem;
   border-radius: 5px;
-  background-image: linear-gradient(to left, #3184C0, #68B4E4, #3184C0);
+  background-color: #000000;
   transform-style: preserve-3d;
+  width: 20rem;
 }
 
 .card:hover .card-content {
@@ -27,41 +28,68 @@
 }
 
 .card-front {
-  transform: translateZ(100px);
+  transform: translateZ(6rem);
   font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2em;
+  font-size: 2rem;
+  color: #FFFFFF;
 }
 
 .card-back {
-  transform: translateZ(-80px);
+  transform: translateZ(-6rem);
   font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2em;
+  font-size: 2rem;
+  color: #FFFFFF;
 }
 
 .card-gametag {
-  transform: rotateY(-0.5turn);
+  transform: rotateY(0.5turn);
 }
 
+@keyframes blinka {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  display: absolute;
+  position: fixed;
+  background-color: #1F1F1F;
+}
+
+#blink {
+  animation: blinka infinite 1s;
+  height: 2rem;
+}
+
+#logo {
+  height: 2rem;
 }
 
 .frontpage {
-  width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(#BD87D7, #8C6B9C);
+  background-image: linear-gradient(to right top, #D16BA5, #86A8E7, #5FFBF1);
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 }
 
 .frontpage * {
@@ -70,99 +98,281 @@
 
 h1 {
   font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: italic;
   color: #000000;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .btn {
   background-color: #FFFFFF;
-  border-radius: 500px;
+  border-radius: 4px;
   text-decoration: none;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 2em;
-  color: #2d922d;
-  padding: 55px 10px;
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 10px;
   box-shadow: #333333 5px 5px 5px;
 }
 
-main, footer {
-  background-color: #85B9EE;
+main {
+  background-image: linear-gradient(to right bottom, #D16BA5, #86A8E7, #291062);
 }
 
-h2 {
-  border-bottom: solid 1px #000000;
-  width: 80%;
-}
-
-.links-container {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 6fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 60vh;
-  padding: 2.5rem;
-  align-items: center;
-  text-align: center;
-}
-
-.grid-item1 {
-  grid-area: 1/1/4/5;
-  height: 100%;
-}
-
-.grid-item2 {
-  grid-area: 4/1/4/1;
-}
-
-.grid-item3 {
-  grid-area: 4/2/4/2;
-}
-
-.grid-item4 {
-  grid-area: 4/3/4/3;
-}
-
-.grid-item5 {
-  grid-area: 4/4/4/4;
-}
-
-.grid-item6 {
-  grid-area: 1/5/2/5;
-}
-
-.grid-item7 {
-  grid-area: 2/5/4/5;
-  font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2em;
-  padding: 2.5rem;
+footer {
+  background-image: linear-gradient(to right top, #D16BA5, #86A8E7, #291062);
 }
 
 li {
   list-style: none;
-  text-decoration: none;
 }
 
 li > a {
   text-decoration: none;
+  opacity: 100%;
+  color: #000000;
   font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2em;
+  font-size: 2rem;
+}
+@media (max-width: 600px) {
+  li > a {
+    font-size: 1.5rem;
+  }
+}
+
+nav {
+  padding: 2rem;
+}
+@media (max-width: 600px) {
+  nav {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 nav > ul {
   display: flex;
   justify-content: space-around;
   font-family: "STIX Two Text", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  padding: 2rem;
+}
+@media (max-width: 600px) {
+  nav > ul {
+    padding: 0;
+    padding-top: 2.5rem;
+  }
+}
+
+nav > ul > li {
+  background-color: hidden;
+  border-radius: 10px;
+  padding: 0.5rem;
+  opacity: 80%;
+}
+h2 {
+  border-bottom: solid 1px #000000;
+  width: 80%;
+  padding-inline-start: 1rem;
+  font-family: "STIX Two Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+@media (max-width: 600px) {
+  h2 {
+    width: 100%;
+  }
+}
+
+h3 {
+  font-family: "STIX Two Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+section {
+  padding: 4rem;
+}
+@media (max-width: 600px) {
+  section {
+    padding-top: 1.5rem;
+  }
+}
+
+.grid-item1 > img {
+  border-radius: 50px;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 6fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  height: 70vh;
+  padding: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .links-container {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+    gap: 1rem;
+    height: 90vh;
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .links-container {
+    margin-bottom: 6rem;
+  }
+}
+
+.grid-item1 {
+  grid-area: 1/1/4/5;
+}
+@media (max-width: 600px) {
+  .grid-item1 {
+    grid-area: 1/1/5/5;
+    height: 80%;
+  }
+}
+
+.grid-item2 {
+  grid-area: 4/1/4/1;
+}
+@media (max-width: 600px) {
+  .grid-item2 {
+    grid-area: 1/5/1/6;
+  }
+}
+
+.grid-item3 {
+  grid-area: 4/2/4/2;
+}
+@media (max-width: 600px) {
+  .grid-item3 {
+    grid-area: 2/5/2/6;
+  }
+}
+
+.grid-item4 {
+  grid-area: 4/3/4/3;
+}
+@media (max-width: 600px) {
+  .grid-item4 {
+    grid-area: 3/5/3/6;
+  }
+}
+
+.grid-item5 {
+  grid-area: 4/4/4/4;
+}
+@media (max-width: 600px) {
+  .grid-item5 {
+    grid-area: 4/5/4/6;
+  }
+}
+
+.grid-item6 {
+  grid-area: 1/5/2/5;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .grid-item6 {
+    grid-area: 5/1/5/6;
+    padding: 0.5rem;
+  }
+}
+
+.grid-item7 {
+  grid-area: 2/5/5/5;
+  font-family: "STIX Two Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 4rem;
+}
+@media (max-width: 600px) {
+  .grid-item7 {
+    grid-area: 6/1/6/6;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+.grid-item1 > img {
+  height: 100%;
+}
+
+.skills, .projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 4rem;
+}
+
+@media (min-width: 600px) {
+  .skills {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills > img {
+    width: 40%;
+  }
+}
+
+.projects {
+  gap: 2rem;
+}
+
+figure > img, figure > video {
+  width: 80%;
+}
+@media (max-width: 600px) {
+  figure > img, figure > video {
+    width: 95%;
+  }
+}
+
+@media (min-width: 600px) {
+  figure {
+    flex-basis: 38%;
+  }
+}
+
+figcaption {
+  font-family: "STIX Two Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kontakt {
+  margin: auto;
+}
+
+.up-button {
+  display: inline;
+  position: sticky;
+  left: 97%;
+  bottom: 50px;
+  margin-top: 1000px;
+}
+
+.upp:active {
+  content: url(/media/upp.svg);
 }/*# sourceMappingURL=main.css.map */

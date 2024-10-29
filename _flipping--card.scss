@@ -3,6 +3,7 @@
 $padding-xs: 0.5rem;
 $padding-s: 1.5rem;
 $padding-m: 2.5rem;
+$padding-l: 4rem;s
 
 .card {
     width: 20rem;
@@ -15,9 +16,10 @@ $padding-m: 2.5rem;
     transition: transform 3s;
     padding: $padding-s;
     border-radius: 5px;
-    background-image: linear-gradient(to left, #3184C0, #68B4E4, #3184C0);
+    // background-image: linear-gradient(to left, #3184C0, #68B4E4, #3184C0);
+    background-color: #000000;
     transform-style: preserve-3d;
-
+    width: 20rem;
 }
 .card:hover .card-content {
     transform: rotateY(.5turn);
@@ -31,16 +33,19 @@ $padding-m: 2.5rem;
     padding: $padding-xs;
 }
 .card-front {
-    transform: translateZ(100px);
+    transform: translateZ(6rem);
     @include font.font-text;
     font-size: font.$font-size-s;
+    color: #FFFFFF;
+    
 }
 .card-back{
-    transform: translateZ(-80px);
+    transform: translateZ(-6rem);
     @include font.font-text;
     font-size: font.$font-size-s;
+    color: #FFFFFF;
 }
 .card-gametag {
-    transform: rotateY(-0.5turn);
+    transform: rotateY(0.5turn);
     
 }
