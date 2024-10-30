@@ -1,4 +1,4 @@
-s .card {
+.card {
   width: 20rem;
   margin: 0 auto;
 }
@@ -74,11 +74,17 @@ s .card {
 
 #blink {
   animation: blinka infinite 1s;
-  height: 2rem;
+}
+@media (min-width: 600px) {
+  #blink {
+    height: 2rem;
+  }
 }
 
-#logo {
-  height: 2rem;
+@media (min-width: 600px) {
+  #logo {
+    height: 2rem;
+  }
 }
 
 .frontpage {
@@ -90,6 +96,7 @@ s .card {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  z-index: 2;
 }
 
 .frontpage * {
@@ -121,10 +128,6 @@ main {
   background-image: linear-gradient(to right bottom, #D16BA5, #86A8E7, #291062);
 }
 
-footer {
-  background-image: linear-gradient(to right top, #D16BA5, #86A8E7, #291062);
-}
-
 li {
   list-style: none;
 }
@@ -144,8 +147,17 @@ li > a {
   }
 }
 
+li > a:visited {
+  color: #8f466f;
+}
+
+li > a:hover {
+  color: #000000;
+}
+
 nav {
   padding: 2rem;
+  z-index: 2;
 }
 @media (max-width: 600px) {
   nav {
@@ -175,6 +187,7 @@ nav > ul > li {
   padding: 0.5rem;
   opacity: 80%;
 }
+
 h2 {
   border-bottom: solid 1px #000000;
   width: 80%;
@@ -194,7 +207,7 @@ h3 {
   font-family: "STIX Two Text", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -220,6 +233,7 @@ section {
   padding: 2.5rem;
   align-items: center;
   text-align: center;
+  z-index: 2;
 }
 @media (max-width: 600px) {
   .links-container {
@@ -314,6 +328,12 @@ section {
   height: 100%;
 }
 
+@media (max-width: 600px) {
+  .links {
+    width: 95%;
+  }
+}
+
 .skills, .projects {
   display: flex;
   flex-flow: row wrap;
@@ -362,17 +382,40 @@ figcaption {
 }
 
 .kontakt {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .up-button {
   display: inline;
-  position: sticky;
-  left: 97%;
-  bottom: 50px;
-  margin-top: 1000px;
+  position: fixed;
+  right: 0;
+  top: 80vh;
+  z-index: 1;
 }
 
 .upp:active {
   content: url(/media/upp.svg);
+}
+
+footer {
+  background-image: linear-gradient(to right top, #D16BA5, #86A8E7, #291062);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-family: "STIX Two Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+th {
+  padding: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
