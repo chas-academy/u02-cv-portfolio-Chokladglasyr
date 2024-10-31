@@ -51,7 +51,7 @@
 }
 
 .logo {
-  display: absolute;
+  position: absolute;
   position: fixed;
   background-color: #1F1F1F;
 }
@@ -136,7 +136,7 @@
   }
   50% {
     transform: translateY(80px);
-    opacity: 2;
+    opacity: 1;
   }
   100% {
     transform: translateY(160px);
@@ -260,7 +260,7 @@ li > a:visited {
 }
 
 li > a:hover {
-  color: #000000;
+  color: #333333;
 }
 
 nav {
@@ -290,7 +290,6 @@ nav > ul {
 }
 
 nav > ul > li {
-  background-color: hidden;
   border-radius: 10px;
   padding: 0.5rem;
   opacity: 80%;
@@ -322,11 +321,6 @@ h3 {
 
 section {
   padding: 4rem;
-}
-@media (max-width: 600px) {
-  section {
-    padding-top: 1.5rem;
-  }
 }
 
 .grid-item1 > img {
@@ -440,6 +434,11 @@ section {
 .grid-item7 > p:first-child {
   padding: 0 4rem 2rem 4rem;
 }
+@media (max-width: 600px) {
+  .grid-item7 > p:first-child {
+    padding: 0 4rem;
+  }
+}
 
 .grid-item7 > p:last-child {
   width: 70%;
@@ -476,6 +475,11 @@ section {
     margin-top: 10rem;
     margin-bottom: 20rem;
   }
+}
+
+#skills {
+  margin-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 @media (max-width: 600px) {

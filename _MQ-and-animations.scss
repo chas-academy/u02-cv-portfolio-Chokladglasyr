@@ -18,7 +18,7 @@
 
 //STYLING FÖR LOGO
 .logo {
-    display: absolute;
+    position: absolute;
     position: fixed;
     background-color: #1F1F1F;
  
@@ -96,7 +96,7 @@
      }
      50% {
          transform: translateY(80px);
-         opacity: 2;
+         opacity: 1;
      }
      100% {
          transform: translateY(160px);

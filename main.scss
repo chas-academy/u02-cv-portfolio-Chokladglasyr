@@ -68,7 +68,7 @@ li>a:visited {
     color:#8f466f;
 }
 li>a:hover {
-    color: #000000;
+    color: #333333;
 }
 nav {
     padding: 2rem;
@@ -91,7 +91,6 @@ nav>ul {
 }
 nav>ul>li{
     // background-image: radial-gradient(#68B4E4, #3184C0);
-    background-color: hidden;
     border-radius: 10px;
     padding: FP.$padding-xs;
     opacity: 80%;
@@ -115,9 +114,7 @@ h3 {
 }
 section {
     padding: FP.$padding-l;
-    @include MQ.for-phone {
-        padding-top: FP.$padding-s;
-    }
+
 }
 .grid-item1>img {
     border-radius: 50px;
@@ -204,6 +201,9 @@ section {
 }
 .grid-item7>p:first-child {
     padding: 0 4rem 2rem 4rem;
+    @include MQ.for-phone {
+        padding: 0 FP.$padding-l;
+    }
 
 }
 .grid-item7>p:last-child {
@@ -233,9 +233,13 @@ section {
 }
 .skills {
     @include MQ.for-desktop{
-     margin-top: 10rem;
-     margin-bottom: 20rem;
-    }
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    }  
+}
+#skills {
+    margin-bottom: 4rem;
+    padding-top: 4rem;
 }
 .skills>img {
     @include MQ.for-phone {
