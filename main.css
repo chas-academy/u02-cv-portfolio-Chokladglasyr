@@ -59,13 +59,13 @@
 #blink {
   animation: blinka infinite 1s;
 }
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   #blink {
     height: 2rem;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   #logo {
     height: 2rem;
   }
@@ -92,7 +92,7 @@
   border-left: 6px dashed #FFFFFF;
   opacity: 0.5;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .streck {
     top: 80%;
   }
@@ -249,7 +249,7 @@ li > a {
   font-style: normal;
   font-size: 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   li > a {
     font-size: 1.5rem;
   }
@@ -267,7 +267,7 @@ nav {
   padding: 2rem;
   z-index: 2;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   nav {
     padding-bottom: 0;
     padding-top: 0;
@@ -282,7 +282,7 @@ nav > ul {
   font-style: normal;
   padding: 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   nav > ul {
     padding: 0;
     padding-top: 2.5rem;
@@ -304,7 +304,7 @@ h2 {
   font-style: normal;
   font-size: 2.5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   h2 {
     width: 100%;
   }
@@ -337,7 +337,7 @@ section {
   text-align: center;
   z-index: 2;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .links-container {
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr;
@@ -346,7 +346,7 @@ section {
     padding: 1.5rem;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   .links-container {
     margin-bottom: 6rem;
   }
@@ -356,7 +356,7 @@ section {
   grid-area: 1/1/4/5;
   height: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item1 {
     grid-area: 1/1/5/5;
     height: 80%;
@@ -366,7 +366,7 @@ section {
 .grid-item2 {
   grid-area: 4/1/4/1;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item2 {
     grid-area: 1/5/1/6;
   }
@@ -375,7 +375,7 @@ section {
 .grid-item3 {
   grid-area: 4/2/4/2;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item3 {
     grid-area: 2/5/2/6;
   }
@@ -384,7 +384,7 @@ section {
 .grid-item4 {
   grid-area: 4/3/4/3;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item4 {
     grid-area: 3/5/3/6;
   }
@@ -393,7 +393,7 @@ section {
 .grid-item5 {
   grid-area: 4/4/4/4;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item5 {
     grid-area: 4/5/4/6;
   }
@@ -404,7 +404,7 @@ section {
   padding: 2.5rem;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item6 {
     grid-area: 5/1/5/6;
     padding: 0.5rem;
@@ -419,7 +419,7 @@ section {
   font-size: 2rem;
   padding: 2.5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item7 {
     grid-area: 6/1/6/6;
     font-size: 1.5rem;
@@ -434,7 +434,7 @@ section {
 .grid-item7 > p:first-child {
   padding: 0 4rem 2rem 4rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .grid-item7 > p:first-child {
     padding: 0 4rem;
   }
@@ -445,7 +445,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .links {
     width: 95%;
   }
@@ -458,19 +458,19 @@ section {
   padding-bottom: 2rem;
   row-gap: 4rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .skills, .projects {
     justify-content: space-around;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   .skills, .projects {
     -moz-column-gap: 12rem;
          column-gap: 12rem;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   .skills {
     margin-top: 10rem;
     margin-bottom: 20rem;
@@ -482,7 +482,7 @@ section {
   padding-top: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   .skills > img {
     width: 38%;
   }
@@ -495,13 +495,13 @@ section {
 figure > img, figure > video {
   width: 70%;
 }
-@media (max-width: 600px) {
+@media (max-width: 790px) {
   figure > img, figure > video {
     width: 95%;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 790px) {
   figure {
     flex-basis: 35%;
   }
